@@ -64,12 +64,17 @@ public class MaximumTest <T extends Comparable<T>> {
 		}
 	}
 	
+	public static <T> void printMax() {
+		
+		maximum(12, 13, 14, 11);
+	}
+	
 	//main method
 	public static void main(String[] args) {
 		
 		MaximumTest.testMaximum("Shubham", "Anil", "Bhele", "Waman");
 		new MaximumTest<Integer>(12, 13, 14, 11).maximum();
-		
+		printMax();
 	}
 	
 	
