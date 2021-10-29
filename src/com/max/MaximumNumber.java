@@ -6,9 +6,11 @@ public class MaximumNumber {
 				
 		System.out.println("Welcome to Test maximum 3 variables Program");
 		
-		//object for getting the maximum number
-		MaxInteger max = new MaxInteger();		
-		max.findMax(15, 55, 20);
+		//object for getting the maximum
+		FindingMax max = new FindingMax();		
+		max.findInt(15, 55, 20);
+		
+		max.findFloat(1.2f, 2.0f, 2.2f);
 	}
 
 }
