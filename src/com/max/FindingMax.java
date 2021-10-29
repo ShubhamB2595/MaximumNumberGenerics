@@ -7,48 +7,18 @@ public class FindingMax {
 
 	}
 	
-	//method to find the largest integer number 
-	public void findInt(int num1, int num2, int num3) {
+	//generic method to find the maximum from 3 input
+	public <T extends Comparable <T>> void maximum(T num1, T num2, T num3) {
 		
-		if (num1 >= num2 && num1 >= num3) {
-	         System.out.println( num1 + " is the maximum number.");
+		if(num1.compareTo(num2) > 0 && num1.compareTo(num3) > 0) {
+			System.out.println(num1 + " is maximum");
 		}
-	    else if (num2 >= num1 && num2 >= num3) {
-	         System.out.println( num2 + " is the maximum number.");
-	    }
-	    else {
-	         System.out.println( num3 + " is the maximum number.");
-	    }
-	}	
 		
-	//method to find the largest float number 
-	public void findFloat(float num1, float num2, float num3) {
-		
-		if (num1 >= num2 && num1 >= num3) {
-	         System.out.println( num1 + " is the maximum number.");
-		}
-		else if (num2 >= num1 && num2 >= num3) {
-		     System.out.println( num2 + " is the maximum number.");
+		else if(num2.compareTo(num1) > 0 && num2.compareTo(num3) > 0) {
+			System.out.println(num2 + " is maximum");
 		}
 		else {
-			System.out.println( num3 + " is the maximum number.");
+			System.out.println(num3 + " is maximum");
 		}
-
 	}
-	
-	//method to find the largest string  
-	public void findString(String num1, String num2, String num3) {
-			
-		if((num1.compareToIgnoreCase(num2) >= 0) && (num1.compareToIgnoreCase(num3)) >= 0) {
-			System.out.println( num1 + " is the maximum");
-		}
-		else if((num2.compareToIgnoreCase(num1) >= 0) && (num2.compareToIgnoreCase(num3)) >= 0) {
-			System.out.println( num2 + " is the maximum");
-		}
-		else {
-			System.out.println(num3 + " is the maximum");
-		}
-			
-	}
-		
 }

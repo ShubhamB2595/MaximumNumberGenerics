@@ -8,11 +8,7 @@ public class MaximumNumber {
 		
 		//object for getting the maximum
 		FindingMax max = new FindingMax();		
-		max.findInt(15, 55, 20);
-		
-		max.findFloat(1.2f, 2.0f, 2.2f);
-		
-		max.findString("Shubham", "Anil", "Bhele");
+		max.maximum("Anil", "Shubham", "Bhele");
 	}
 
 }
