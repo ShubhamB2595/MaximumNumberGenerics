@@ -39,10 +39,10 @@ public class FindingMax {
 	//method to find the largest string  
 	public void findString(String num1, String num2, String num3) {
 			
-		if((num1.compareToIgnoreCase(num2) <= 0) && (num1.compareToIgnoreCase(num3)) <= 0) {
+		if((num1.compareToIgnoreCase(num2) >= 0) && (num1.compareToIgnoreCase(num3)) >= 0) {
 			System.out.println( num1 + " is the maximum");
 		}
-		else if((num2.compareToIgnoreCase(num1) <= 0) && (num2.compareToIgnoreCase(num3)) <= 0) {
+		else if((num2.compareToIgnoreCase(num1) >= 0) && (num2.compareToIgnoreCase(num3)) >= 0) {
 			System.out.println( num2 + " is the maximum");
 		}
 		else {
