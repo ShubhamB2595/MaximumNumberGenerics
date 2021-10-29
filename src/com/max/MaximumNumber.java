@@ -11,6 +11,8 @@ public class MaximumNumber {
 		max.findInt(15, 55, 20);
 		
 		max.findFloat(1.2f, 2.0f, 2.2f);
+		
+		max.findString("Shubham", "Anil", "Bhele");
 	}
 
 }
